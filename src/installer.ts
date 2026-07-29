@@ -160,7 +160,7 @@ async function downloadBuf(
       `The "${process.arch}" architecture is not supported with a Buf release.`,
     );
   }
-  const downloadURL = `https://github.com/bufbuild/buf/releases/download/v${version}/${executable}`;
+  const downloadURL = `https://github.com/loong64/buf/releases/download/v${version}/${executable}`;
   const auth = githubToken ? `token ${githubToken}` : undefined;
   if (!auth) {
     // Warn if the GitHub token is not set. Don't fail as not required.
